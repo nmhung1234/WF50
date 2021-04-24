@@ -1,0 +1,22 @@
+.exp_date{
+    color:#fff;
+    border: 2px solid #ececec;
+    border-radius: 20px;
+    background-color: #3895D3;
+    padding: 10px 30px;
+    margin: 0;
+}
+.exp_date p:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+.exp_date p:nth-child(2){
+    font-size: 20px;
+    margin: 0;
+}
+.exp_date p:nth-child(3){
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+}
