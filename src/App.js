@@ -1,7 +1,9 @@
 import React from "react";
-import "./App.css";
-import Card from "./components/Card/Card";
+import styled from 'styled-components';
 
+import "./App.css";
+
+import Card from "./components/Card/Card";
 import ExpenseItem from "./components/Card/ExpenseItem/ExpenseItem";
 import ExpenseForm from './components/ExpenseForm/ExpenseForm';
 

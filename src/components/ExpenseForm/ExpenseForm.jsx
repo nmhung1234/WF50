@@ -10,27 +10,24 @@ function ExpenseForm(props) {
     };
 
     return (
-        <div>
+        <div className="form">
             <form onSubmit={handleFrom}>
                 <div>
                     <lable>
                         Description
                         <DescriptionForm />
                     </lable>
-                </div>
-                <div>
+                
                     <lable>
                         Price
                         <PriceForm />
                     </lable>
-                </div>
-                <div>
+                
                     <lable>
                         Date
                         <DateForm />
                     </lable>
-                </div>
-                <div>
+                
                     <lable>
                         Filter
                         <FilterForm />
@@ -44,5 +41,4 @@ function ExpenseForm(props) {
         </div>
     );
 }
-
 export default ExpenseForm;

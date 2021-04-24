@@ -7,13 +7,13 @@ function DescriptionForm(props) {
         setDescription(e.target.value);
     };
     return (
-        <div>
+        <>
             <input
                 type="text"
                 value={description}
                 onChange={onDescriptionChange}
             />
-        </div>
+        </>
     );
 }
 
