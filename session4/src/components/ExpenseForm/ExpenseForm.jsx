@@ -5,7 +5,7 @@ import FormInput from "./FormInput";
 function ExpenseForm(props) {
     const [date, setDate] = useState("");
     const [description, setDescription] = useState("");
-    const [price, setPrice] = useState(0);
+    const [price, setPrice] = useState(10);
     const [filter, setFilter] = useState(0);
     const [formVisible, setFormVisible] = useState(false);
 
