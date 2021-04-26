@@ -1,0 +1,40 @@
+.card {
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 3px 10px rgba(136, 135, 135, 0.336);
+}
+.left {
+    display: flex;
+}
+img {
+    border-radius: 10px;
+}
+.detail {
+    padding: 0 20px;
+    text-align: left;
+}
+.detail .title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.sale {
+    color: red;
+    font-size: 12px;
+}
+.price {
+    color: red;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    transform: translateY(7px)
+}
+
+.right img {
+    width: 40px;
+    
+}
