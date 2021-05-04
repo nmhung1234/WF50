@@ -1,0 +1,63 @@
+.items .item {
+    width: 250px;
+    margin: 20px;
+    /* border: 1px solid; */
+    overflow: hidden;
+}
+.items .item img {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+.item .color {
+    display: flex;
+}
+.item .color p {
+    height: 15px;
+    width: 15px;
+    margin-right: 10px;
+}
+/* khi click vào màu thì thêm class active */
+.active {
+    border: 3px solid red;
+    width: fit-content;
+    padding: 0;
+    margin: 0;
+}
+/* -------------- */
+.item .name {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+.item .id-item {
+    font-size: 10px;
+    text-align: left;
+    text-transform: uppercase;
+}
+.item .price {
+    text-align: left;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.add-to-card {
+    border: 1px solid red;
+    color: red;
+    text-transform: uppercase;
+    margin: 20px 0;
+    padding: 5px;
+    font-size: 13px;
+    cursor: pointer;
+    transform: translateY(70px);
+    transition: transform 0.3s;
+}
+.add-to-card:active {
+    background-color: red;
+    color: white;
+}
+.item:hover .add-to-card {
+    transform: translateY(0);
+    transition: transform 0.3s;
+}

@@ -1,0 +1,40 @@
+.promo {
+    width: 80%;
+    min-height: 70vh;
+    /* border: 1px solid; */
+    display: flex;
+    margin: 0 auto;
+    background-color: pink;
+}
+.promo .left {
+    width: 30%;
+    text-align: left;
+    padding: 30px;
+    color: rgb(0, 95, 119);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.left .title p:nth-child(1) {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.left .button {
+    border: 1px solid rgb(0, 95, 119);
+    padding: 10px 20px;
+    text-decoration: none;
+    color: rgb(0, 95, 119);
+    margin-top: 50px;
+}
+.left .button:hover {
+    color: white;
+    background-color: rgb(0, 95, 119);
+}
+.right {
+    width: 70%;
+    background: url("https://ae01.alicdn.com/kf/HTB1QGppl_JYBeNjy1zeq6yhzVXa0/Family-Clothing-Summer-Matching-Clothes-Mom-and-Daughter-Dress-Family-Matching-Outfits-Father-Son-Stripe-T.jpg")
+        center no-repeat;
+    background-size: cover;
+}

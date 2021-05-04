@@ -1,0 +1,11 @@
+.footer {
+    width: 100%;
+    margin: 0;
+}
+.footer p {
+    margin: 0;
+    font-size: 20px;
+    padding: 20px;
+    background-color: rgb(0, 95, 119);
+    color: #fff;
+}
