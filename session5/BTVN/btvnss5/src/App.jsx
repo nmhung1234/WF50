@@ -86,7 +86,7 @@ function App() {
                 onSearch={onSearch}
                 onChangeQty={onChangeQty}
             />
-            <Promo />
+            {search ? "" : <Promo />}
 
             {products}
             <Footer />
