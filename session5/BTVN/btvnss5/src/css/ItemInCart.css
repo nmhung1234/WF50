@@ -8,8 +8,8 @@
     height: 140px;
 }
 .detail-cart .item .info {
-    width: calc(100% - 140px);
-    padding: 0 20px;
+    width: 100%;
+    padding: 0 0 0 20px;
 }
 .info .price-qty {
     display: flex;
