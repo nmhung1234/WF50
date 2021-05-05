@@ -6,7 +6,8 @@ function Product(props) {
     const { category, data, onAddToCart, search, onForPay } = props;
     let items = data.map((item, index) => {
         let name = item.name;
-        if (name.includes(search.toUpperCase())) {
+        let code = item.code;
+        if (name.includes(search.toUpperCase()) || code.includes(search.toUpperCase())) {
             return (
                 <Item
                     key={index}
