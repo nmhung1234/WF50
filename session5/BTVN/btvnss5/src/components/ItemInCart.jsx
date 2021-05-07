@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./../css/ItemInCart.css";
 
 function ItemInCart(props) {
-    const { data, onProductDelete, onChangeQty } = props;
+    const { data, onProductDelete, onChangeQty, price } = props;
 
     const [imageback, setImageback] = useState([]);
     const [active, setActive] = useState("");
@@ -11,9 +11,9 @@ function ItemInCart(props) {
     if (qty === 0) {
         onProductDelete(data.code);
     }
-    useEffect(()=>{
+    useEffect(() => {
         setQty(data.qty);
-    },[data])
+    }, [data]);
     let color = data.colors;
 
     const colorProduct = color.map((element, index) => {
@@ -40,6 +40,8 @@ function ItemInCart(props) {
         setActive(activecolor);
     }, []);
 
+    
+
     const onChangeBack = (index) => {
         // console.log(index);
 
@@ -58,7 +60,7 @@ function ItemInCart(props) {
                 <div className="id-item">{data.code}</div>
                 <div className="price-qty">
                     <div className="price">
-                        {data.price.toString().slice(0, 3)}.000 đ
+                        {price} đ
                     </div>
                     <div className="qty">
                         <span>số lượng:</span>

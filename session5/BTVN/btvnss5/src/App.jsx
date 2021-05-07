@@ -37,7 +37,7 @@ function App() {
     };
 
     const onProductDelete = (codeDel) => {
-        console.log(codeDel);
+        // console.log(codeDel);
         const newCart = cart.filter((item) => item.code != codeDel);
         setCart(newCart);
     };

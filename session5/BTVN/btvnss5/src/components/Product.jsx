@@ -4,6 +4,9 @@ import Item from "./Item";
 
 function Product(props) {
     const { category, data, onAddToCart, search, onForPay } = props;
+    const format_curency = (price) => {
+        return price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+    };
     let items = data.map((item, index) => {
         let name = item.name;
         let code = item.code;
@@ -12,6 +15,7 @@ function Product(props) {
                 <Item
                     key={index}
                     data={item}
+                    price={format_curency(item.price)}
                     onAddToCart={onAddToCart}
                     onForPay={onForPay}
                 />

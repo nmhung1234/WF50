@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./../css/Item.css";
 function Item(props) {
-    const { data, onAddToCart } = props;
+    const { data, onAddToCart,price } = props;
 
     const [imageback, setImageback] = useState([]);
     const [active, setActive] = useState("");
@@ -45,7 +45,7 @@ function Item(props) {
             <div className="name">{data.name}</div>
             <div className="id-item">{data.code}</div>
             <div className="price">
-                {data.price.toString().slice(0, 3)}.000 đ
+                {price} đ
             </div>
             <div className="add-to-card" onClick={() => handleAddItem(data)}>
                 + thêm vào giỏ hàng

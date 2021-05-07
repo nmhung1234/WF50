@@ -42,6 +42,10 @@ function Nav(props) {
         setShowModal(value);
     };
 
+    const format_curency = (price) => {
+        return price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");
+    };
+    
     let produscts = selectedItem.map((item) => {
         // let totalqty = selectedItem.map((item) =>{
         //     console.log(item);
@@ -51,6 +55,7 @@ function Nav(props) {
             <ItemInCart
                 key={item.code}
                 data={item}
+                price={format_curency(item.price)}
                 onProductDelete={onProductDelete}
                 onChangeQty={onChangeQty}
             />
@@ -117,7 +122,7 @@ function Nav(props) {
                                     </div>
                                     <div className="totall total-price">
                                         <p>Tổng giá trị:</p>
-                                        <p>{totalPrice} đ</p>
+                                        <p>{format_curency(totalPrice)} đ</p>
                                     </div>
                                 </div>
                                 <div
