@@ -40,7 +40,7 @@ function Item(props) {
 
     return (
         <div className="item">
-            <img src={imageback[0]} alt="Ảnh sản phẩm" lazyload="true" />
+            <img src="https://picsum.photos/200/300" alt="Ảnh sản phẩm" lazyload="true" />
             <div className="color">{colorProduct}</div>
             <div className="name">{data.name}</div>
             <div className="id-item">{data.code}</div>
